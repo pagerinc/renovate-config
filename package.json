@@ -1,0 +1,61 @@
+{
+  "name": "renovate-config",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pagerinc/renovate-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pagerinc/renovate-config/issues"
+  },
+  "homepage": "https://github.com/pagerinc/renovate-config#readme",
+  "renovate-config": {
+    "default": {
+      "extends": ["config:base", ":semanticCommitTypeAll(chore)"],
+      "docker": {
+        "enabled": false
+      },
+      "pinVersions": false,
+      "groupName": "all",
+      "packageRules": [
+        {
+          "packageNames": [
+            "hapi"
+          ],
+          "allowedVersions": "<17"
+        },
+        {
+          "packageNames": [
+            "hoek", "rejoice", "scooter"
+          ],
+          "allowedVersions": "<5"
+        },
+        {
+          "packageNames": [
+            "good"
+          ],
+          "allowedVersions": "<8"
+        },
+        {
+          "packageNames": [
+            "lab"
+          ],
+          "allowedVersions": "<15"
+        },
+        {
+          "packageNames": [
+            "mongoose"
+          ],
+          "allowedVersions": "<5"
+        }
+      ]
+    }
+  } 
+}
