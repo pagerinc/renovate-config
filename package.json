@@ -18,7 +18,11 @@
   "homepage": "https://github.com/pagerinc/renovate-config#readme",
   "renovate-config": {
     "default": {
-      "extends": ["config:base", ":semanticCommitTypeAll(chore)"],
+      "extends": [
+        "group:all",
+        "config:base", 
+        ":semanticCommitTypeAll(chore)"
+      ],
       "docker": {
         "enabled": false
       },
