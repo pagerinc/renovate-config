@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/pagerinc/renovate-config#readme",
   "renovate-config": {
-    "default": {
+    "api-stable": {
       "extends": [
         "group:all",
         "config:base", 
@@ -27,7 +27,6 @@
         "enabled": false
       },
       "pinVersions": false,
-      "groupName": "all",
       "packageRules": [
         {
           "packageNames": [
@@ -58,6 +57,25 @@
             "mongoose"
           ],
           "allowedVersions": "<5"
+        }
+      ]
+    },
+    "api-dev": {
+      "extends": [
+        "group:all",
+        "config:base", 
+        ":semanticCommitTypeAll(chore)"
+      ],
+      "docker": {
+        "enabled": false
+      },
+      "pinVersions": false,
+      "packageRules": [
+        {
+          "packageNames": [
+            "hapi"
+          ],
+          "allowedVersions": "<18"
         }
       ]
     }
