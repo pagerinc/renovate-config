@@ -42,6 +42,12 @@
         },
         {
           "packageNames": [
+            "h2o2"
+          ],
+          "allowedVersions": "<7"
+        },
+        {
+          "packageNames": [
             "good"
           ],
           "allowedVersions": "<8"
