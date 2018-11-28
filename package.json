@@ -20,12 +20,14 @@
     "api-stable": {
       "extends": [
         "group:all",
-        "config:base", 
-        ":semanticCommitTypeAll(chore)"
+        "config:base",
+        ":semanticCommitTypeAll(chore)",
+        ":preserveSemverRanges"
       ],
       "docker": {
-        "enabled": false
+        "enabled": true
       },
+      "labels": ["chore"],
       "pinVersions": false,
       "packageRules": [
         {
@@ -69,12 +71,14 @@
     "api-dev": {
       "extends": [
         "group:all",
-        "config:base", 
-        ":semanticCommitTypeAll(chore)"
+        "config:base",
+        ":semanticCommitTypeAll(chore)",
+        ":preserveSemverRanges"
       ],
       "docker": {
-        "enabled": false
+        "enabled": true
       },
+      "labels": ["chore"],
       "pinVersions": false,
       "packageRules": [
         {
@@ -85,5 +89,5 @@
         }
       ]
     }
-  } 
+  }
 }
