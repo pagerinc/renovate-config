@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "group:all",
+    "github>pagerinc/infra-renovate-config"
+  ],
+  "pinVersions": false
+}
