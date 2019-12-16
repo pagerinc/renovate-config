@@ -5,5 +5,12 @@
   "postUpdateOptions": [
     "npmDedupe"
   ],
-  "rangeStrategy": "update-lockfile"
+  "rangeStrategy": "update-lockfile",
+  "packageRules": [
+    {
+      "packagePatterns": ["^@types/"],
+      "groupName": "types",
+      "automerge": true
+    }
+  ]
 }
