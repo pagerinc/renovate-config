@@ -8,8 +8,22 @@
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
-      "packagePatterns": ["^@types/"],
-      "groupName": "types",
+      "description": "Auto update non-major Pager dependencies",
+      "packagePatterns": ["^@pager/"],
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "pager",
+      "automerge": true
+    },
+    {
+      "description": "Auto update non-major Hapi dependencies",
+      "packagePatterns": ["^@hapi/"],
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "hapi",
+      "automerge": true
+    },
+    {
+      "description": "Auto update dev dependencies",
+      "depTypeList": ["devDependencies"],
       "automerge": true
     }
   ]
