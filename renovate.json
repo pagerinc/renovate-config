@@ -8,23 +8,35 @@
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
+      "depTypeList": ["dependencies"],
+      "semanticCommitType": "build"
+    },
+    {
       "description": "Auto update non-major Pager dependencies",
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "pager",
+      "groupName": "pager (non-major)",
       "automerge": true
     },
     {
       "description": "Auto update non-major Hapi dependencies",
       "packagePatterns": ["^@hapi/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "hapi",
+      "groupName": "hapi (non-major)",
       "automerge": true
     },
     {
       "description": "Auto update dev dependencies",
       "depTypeList": ["devDependencies"],
+      "groupName": "devDependencies",
       "automerge": true
+    },
+    {
+      "description": "Auto update new relic",
+      "packagePatterns": ["newrelic"],
+      "groupName": "newrelic",
+      "automerge": true,
+      "automergeType": "branch"
     }
   ]
 }
