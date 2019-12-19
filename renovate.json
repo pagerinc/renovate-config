@@ -6,6 +6,19 @@
     "npmDedupe"
   ],
   "rangeStrategy": "update-lockfile",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "branch"
+  },
+  "engines": {
+    "npm": {
+      "enabled": false
+    },
+    "node": {
+      "enabled": false
+    }
+  },
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
@@ -16,25 +29,28 @@
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "pager (non-major)",
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "description": "Auto update non-major Hapi dependencies",
       "packagePatterns": ["^@hapi/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "hapi (non-major)",
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
-      "description": "Auto update dev dependencies",
+      "description": "Auto update non-major dev dependencies",
+      "updateTypes": ["minor", "patch", "pin", "digest"],
       "depTypeList": ["devDependencies"],
-      "groupName": "devDependencies",
-      "automerge": true
+      "groupName": "devDependencies (non-major)",
+      "automerge": true,
+      "automergeType": "branch"
     },
     {
       "description": "Auto update new relic",
       "packagePatterns": ["newrelic"],
-      "groupName": "newrelic",
       "automerge": true,
       "automergeType": "branch"
     }
