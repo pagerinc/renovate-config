@@ -12,6 +12,7 @@
     "automergeType": "branch"
   },
   "engines": {
+    "enabled": false,
     "npm": {
       "enabled": false
     },
