@@ -30,6 +30,7 @@
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "pager",
+      "stabilityDays": 0,
       "automerge": true,
       "automergeType": "branch"
     },
