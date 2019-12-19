@@ -29,7 +29,7 @@
       "description": "Auto update non-major Pager dependencies",
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "pager (non-major)",
+      "groupName": "pager",
       "automerge": true,
       "automergeType": "branch"
     },
@@ -37,7 +37,7 @@
       "description": "Auto update non-major Hapi dependencies",
       "packagePatterns": ["^@hapi/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "hapi (non-major)",
+      "groupName": "hapi",
       "automerge": true,
       "automergeType": "branch"
     },
@@ -45,7 +45,7 @@
       "description": "Auto update non-major dev dependencies",
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "depTypeList": ["devDependencies"],
-      "groupName": "devDependencies (non-major)",
+      "groupName": "dev-dependencies",
       "automerge": true,
       "automergeType": "branch"
     },
