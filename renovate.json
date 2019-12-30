@@ -43,8 +43,8 @@
       "automergeType": "branch"
     },
     {
-      "description": "Auto update non-major dev dependencies",
-      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "description": "Auto update dev dependencies",
+      "updateTypes": ["major","minor", "patch", "pin", "digest"],
       "depTypeList": ["devDependencies"],
       "groupName": "dev-dependencies",
       "automerge": true,
