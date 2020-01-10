@@ -8,11 +8,9 @@
   "rangeStrategy": "update-lockfile",
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true,
-    "automergeType": "branch"
+    "automerge": true
   },
   "engines": {
-    "enabled": false,
     "npm": {
       "enabled": false
     },
@@ -31,30 +29,32 @@
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "pager",
       "stabilityDays": 0,
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "description": "Auto update non-major Hapi dependencies",
       "packagePatterns": ["^@hapi/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "hapi",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "description": "Auto update dev dependencies",
-      "updateTypes": ["major","minor", "patch", "pin", "digest"],
+      "updateTypes": ["major", "minor", "patch", "pin", "digest"],
       "depTypeList": ["devDependencies"],
       "groupName": "dev-dependencies",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     },
     {
       "description": "Auto update new relic",
       "packagePatterns": ["newrelic"],
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
+    },
+    {
+      "description": "Auto update non-major safe dependencies",
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "packagePatterns": ["mongoose", "twilio"],
+      "automerge": true
     }
   ]
 }
