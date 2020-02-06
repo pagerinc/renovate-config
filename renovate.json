@@ -28,6 +28,7 @@
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "pager",
+      "schedule": "at any time",
       "stabilityDays": 0,
       "automerge": true
     },
