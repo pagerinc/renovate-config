@@ -54,7 +54,7 @@
     {
       "description": "Auto update non-major safe dependencies",
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "packageNames": ["mongoose", "twilio", "moment", "bcrypt"],
+      "packageNames": ["mongoose", "twilio", "moment", "bcrypt", "aws-sdk"],
       "automerge": true
     }
   ]
