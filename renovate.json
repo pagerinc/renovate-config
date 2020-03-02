@@ -39,7 +39,6 @@
     {
       "description": "Auto update dev dependencies",
       "depTypeList": ["devDependencies"],
-      "groupName": "dev-dependencies",
       "automerge": true
     },
     {
