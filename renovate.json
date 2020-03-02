@@ -25,7 +25,6 @@
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch"],
       "groupName": "pager",
-      "schedule": "at any time",
       "stabilityDays": 0,
       "automerge": true
     },
