@@ -25,6 +25,7 @@
       "description": "Auto update non-major Pager dependencies",
       "packagePatterns": ["^@pager/"],
       "updateTypes": ["minor", "patch"],
+      "schedule": null,
       "groupName": "pager",
       "stabilityDays": 0,
       "automerge": true
@@ -50,6 +51,7 @@
       "description": "Auto update non-major safe dependencies",
       "updateTypes": ["minor", "patch"],
       "packageNames": ["mongoose", "twilio", "moment", "bcrypt", "aws-sdk", "hapi-swagger", "uuid"],
+      "stabilityDays": 0,
       "automerge": true
     }
   ]
