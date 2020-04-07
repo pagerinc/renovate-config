@@ -2,6 +2,7 @@
   "extends": [
     "github>pagerinc/infra-renovate-config"
   ],
+  "assignAutomerge": true,
   "reviewers": ["team:backend"],
   "postUpdateOptions": [
     "npmDedupe"
