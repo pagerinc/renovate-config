@@ -51,7 +51,7 @@
     {
       "description": "Auto update non-major safe dependencies",
       "updateTypes": ["minor", "patch"],
-      "packageNames": ["agenda", "aws-sdk", "bcrypt", "hapi-swagger", "moment", "mongoose", "twilio", "uuid"],
+      "packageNames": ["agenda", "aws-sdk", "bcrypt", "hapi-swagger", "ioredis", "moment", "mongoose", "twilio", "uuid"],
       "stabilityDays": 0,
       "automerge": true
     }
