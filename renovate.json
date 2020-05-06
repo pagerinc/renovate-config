@@ -43,6 +43,12 @@
       "automerge": true
     },
     {
+      "description": "Auto update non-major types dev dependencies",
+      "packagePatterns": ["^@types/"],
+      "updateTypes": ["minor", "patch"],
+      "stabilityDays": 0,
+    },
+    {
       "description": "Auto update new relic",
       "packagePatterns": ["newrelic"],
       "automerge": true
