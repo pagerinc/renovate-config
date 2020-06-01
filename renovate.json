@@ -2,6 +2,7 @@
   "extends": [
     "github>pagerinc/infra-renovate-config"
   ],
+  "schedule": ["after 9pm and before 8am on every weekday", "every weekend"],
   "reviewers": ["team:backend"],
   "postUpdateOptions": [
     "npmDedupe"
