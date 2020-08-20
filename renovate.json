@@ -60,6 +60,12 @@
       "packageNames": ["agenda", "aws-sdk", "bcrypt", "hapi-swagger", "ioredis", "moment", "mongoose", "twilio", "uuid"],
       "stabilityDays": 0,
       "automerge": true
-    }
+    },
+    {
+      "description": "Do not update dev dependencies minor and patch",
+      "depTypeList": ["peerDependencies"],
+      "updateTypes": ["minor", "patch"],
+      "enabled": false
+    },
   ]
 }
