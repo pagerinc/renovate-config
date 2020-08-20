@@ -33,7 +33,7 @@
     },
     {
       "description": "Auto update non-major Hapi dependencies",
-      "packagePatterns": ["^@hapi/"],
+      "packagePatterns": ["^@hapi/", "joi"],
       "updateTypes": ["minor", "patch"],
       "groupName": "hapi",
       "automerge": true
