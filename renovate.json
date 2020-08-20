@@ -66,6 +66,6 @@
       "depTypeList": ["peerDependencies"],
       "updateTypes": ["minor", "patch"],
       "enabled": false
-    },
+    }
   ]
 }
