@@ -7,7 +7,7 @@
   "postUpdateOptions": [
     "npmDedupe"
   ],
-  "rangeStrategy": "bump",
+  "rangeStrategy": "replace",
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
@@ -62,7 +62,7 @@
       "automerge": true
     },
     {
-      "description": "Do not update dev dependencies minor and patch",
+      "description": "Do not update peer dependencies minor and patch",
       "depTypeList": ["peerDependencies"],
       "updateTypes": ["minor", "patch"],
       "enabled": false
