@@ -66,6 +66,11 @@
       "depTypeList": ["peerDependencies"],
       "updateTypes": ["minor", "patch"],
       "enabled": false
+    },
+    {
+      "description": "pg dependent packages",
+      "packageNames": ["massive", "db-migrate-pg"],
+      "enabled": false
     }
   ]
 }
